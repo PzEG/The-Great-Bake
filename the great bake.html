@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Great Bake</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #d35400;
+      --accent-color: #f7c59f;
+      --bg-color: #fffaf5;
+      --font-title: 'Pacifico', cursive;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-color);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-family: var(--font-title);
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: var(--accent-color);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #333;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 6px #000;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: var(--font-title);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 200px;
+      max-width: 220px;
+      text-align: center;
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Great Bake</h1>
+    <p>Fresh. Artisanal. Baked with Passion.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Your Local Artisanal Bakery
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>The Great Bake</strong>, where tradition meets creativity. We pride ourselves on using locally sourced ingredients and time-honored recipes to create baked goods that warm the heart. Whether you're here for your morning croissant or an elegant celebration cake, you're part of our family.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b" alt="Cupcake" />
+        <h3>Vanilla Cupcake</h3>
+        <p>$3.50</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1606756792042-63bdc46fb92e" alt="Bread" />
+        <h3>Sourdough Loaf</h3>
+        <p>$5.00</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1611599531865-8f9b704b674b" alt="Croissant" />
+        <h3>Butter Croissant</h3>
+        <p>$2.75</p>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1614707267537-0f4f21c6a8c2" alt="Cheesecake" />
+        <h3>Classic Cheesecake</h3>
+        <p>$6.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Main Street, YourCity</p>
+    <p>📞 (123) 456-7890</p>
+    <p>📧 hello@thegreatbake.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 The Great Bake. Made with love.
+  </footer>
+
+</body>
+</html>
