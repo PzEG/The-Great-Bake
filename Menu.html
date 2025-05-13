@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Great Bake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Cakes</h2>
+        <ul>
+            <li>
+                <button onclick="document.getElementById('cakeFlavors').classList.toggle('hidden')">
+                    View Flavors
+                </button>
+                <ul id="cakeFlavors" class="hidden">
+                    <li>Chocolate</li>
+                    <li>Vanilla</li>
+                    <li>Black Forest</li>
+                    <li>Pineapple</li>
+                    <li>Strawberry</li>
+                    <li>Blueberry</li>
+                    <li>Pista</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Cookies</h2>
+        <ul>
+            <li>Choco-Chip Cookies (6pcs) - $8</li>
+            <li>Oatmeal Raisin Cookies (6pcs) - $7</li>
+        </ul>
+
+        <h2>Pastries</h2>
+        <ul>
+            <li>Butter Croissant - $3</li>
+            <li>Fruit Danish - $3.50</li>
+        </ul>
+
+        <h2>Candies</h2>
+        <ul>
+            <li>Assorted Chocolates (box) - $12</li>
+            <li>Caramel Bites (bag) - $6</li>
+        </ul>
+
+        <h2>Muffins</h2>
+        <ul>
+            <li>Blueberry Muffin - $2.50</li>
+            <li>Double Chocolate Muffin - $2.75</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Great Bake</p>
+    </footer>
+</body>
+</html>
